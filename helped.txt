@@ -1,0 +1,97 @@
+npm init
+  (for json)
+
+
+
+
+
+
+
+cd tfjs
+
+
+git init
+git add .
+git commit -m "My first commit"
+heroku create -a tfjs
+git remote -v
+heroku git:remote -a tfjs
+git push heroku main       or     git push heroku master
+
+
+
+
+
+
+
+
+
+
+
+
+git init
+heroku git:remote -a tfjs
+git add .
+git commit -am "make it better"
+git push heroku master
+heroku ps:scale web=1
+heroku open
+
+
+express server
+
+npm install express
+$ mkdir www
+$ mv style.css www/
+$ mv index.html www/index.html
+$ mv script.js www/script.js
+
+
+
+var express = require('express')
+var app = express()
+
+app.use(express.static('www'));
+
+var server = app.listen(8000, function () {
+
+    var host = server.address().address
+    var port = server.address().port
+
+    console.log('Express app listening at http://%s:%s', host, port)
+
+})
+
+
+make sure process.env.PORT || added before port for heroku because it listens random ports every time
+so it will be
+
+
+var express = require('express')
+var app = express()
+
+app.use(express.static('www'));
+
+var server = app.listen(process.env.PORT || 7000, function () {
+
+    var host = server.address().address
+    var port = server.address().port
+
+    console.log('Express app listening at http://%s:%s', host, port)
+
+})
+
+
+
+
+
+
+http://localhost:8000
+
+https://stackoverflow.com/questions/28822034/simple-node-js-server-that-sends-htmlcss-as-response
+
+https://codelabs.developers.google.com/codelabs/tensorflowjs-object-detection#7
+
+https://www.geeksforgeeks.org/deploying-node-js-applications/
+
+https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app
