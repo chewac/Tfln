@@ -1,0 +1,23 @@
+{
+  "name": "tfln",
+  "version": "1.0.0",
+  "description": "tensorflow js teach your model",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "keywords": [
+    "tensorflow",
+    "js",
+    "teach",
+    "your",
+    "model"
+  ],
+  "author": "Kirill Piddubko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {}
+}
