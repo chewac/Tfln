@@ -1,6 +1,10 @@
+# https://tfln.cyclic.app/
+
+# https://encouraging-toad-sarong.cyclic.app/
+
+(had to redeploy at cyclic.sh due to free heroku closing 28th november 2022)
+
 # https://tflrn.herokuapp.com
-
-
 
 Transfer Learning with MobileNet v3 in TensorFlow.js using saved graph model from TFHub.
 =================
